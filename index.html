@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen Growth | Premium Marketing Agency New York</title>
+    
+    <!-- Premium Google Fonts: Cormorant Garamond for Headings & Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 for crisp social media and functional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            emerald: '#1D4D3A',    /* Primary Emerald Green */
+                            sage: '#A8B99A',       /* Secondary Sage Green */
+                            cream: '#F7F4ED',      /* Background Cream */
+                            offwhite: '#FAFAF8',   /* Off White */
+                            forest: '#324538',     /* Accent Dark Forest Green */
+                            darkBg: '#132c21',     /* Ultra-deep Emerald for process section */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base typography setup */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAF8;
+            color: #324538;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Frosted Glassmorphism Styles */
+        .glass-panel {
+            background: rgba(250, 250, 248, 0.75);
+            backdrop-filter: blur(16px) saturate(120%);
+            -webkit-backdrop-filter: blur(16px) saturate(120%);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .glass-dark {
+            background: rgba(19, 44, 33, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Scroll Reveal Utility Classes */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom scrollbar matching brand aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F7F4ED;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1D4D3A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #324538;
+        }
+    </style>
+</head>
+<body class="selection:bg-brand-sage selection:text-brand-emerald pt-8">
+
+    <header id="sticky-header" class="fixed top-8 left-0 right-0 z-40 transition-all duration-300 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto glass-panel rounded-full px-6 py-4 flex items-center justify-between shadow-lg shadow-black/5 transition-all duration-300">
+            
+            <!-- Logo area with dynamic scalable custom drive image logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-brand-emerald flex items-center justify-center transition-transform duration-500 group-hover:rotate-12 overflow-hidden shadow-sm">
+                    <img src="https://lh3.googleusercontent.com/d/1Rj3kVqN9Cawjym0IVx5-WQDDttfr_oTc" alt="Kaizen Growth Logo" class="w-10 h-10 object-contain">
+                </div>
+                <div>
+                    <span class="font-serif text-lg md:text-xl font-bold tracking-wider text-brand-emerald block leading-none">KAIZEN GROWTH</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-sage font-semibold block mt-1">Marketing & Scaling</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide text-brand-forest">
+                <a href="#home" class="hover:text-brand-emerald transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-brand-emerald hover:after:w-full after:transition-all">Home</a>
+                <a href="#different" class="hover:text-brand-emerald transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-brand-emerald hover:after:w-full after:transition-all">We Are Different</a>
+                <a href="#process" class="hover:text-brand-emerald transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-brand-emerald hover:after:w-full after:transition-all">Process</a>
+                <a href="#services" class="hover:text-brand-emerald transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-brand-emerald hover:after:w-full after:transition-all">Services</a>
+                <a href="#case-studies" class="hover:text-brand-emerald transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-brand-emerald hover:after:w-full after:transition-all">Case Studies</a>
+                <a href="#packages" class="hover:text-brand-emerald transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-brand-emerald hover:after:w-full after:transition-all">Packages</a>
+            </nav>
+
+            <!-- Social Media Icons in Header -->
+            <div class="hidden md:flex items-center gap-4 text-brand-emerald/80 text-base">
+                <a href="https://www.instagram.com/kaizengrowth.labs/" target="_blank" class="hover:text-brand-emerald hover:scale-110 transition-all" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61591157632738" target="_blank" class="hover:text-brand-emerald hover:scale-110 transition-all" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/13477986241" target="_blank" class="hover:text-brand-emerald hover:scale-110 transition-all" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:kaizengrowthlabs@gmail.com" class="hover:text-brand-emerald hover:scale-110 transition-all" title="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+
+            <!-- CTA / Contact Trigger in Header -->
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-block bg-brand-emerald text-brand-cream hover:bg-brand-forest text-xs font-semibold uppercase tracking-widest px-6 py-3 rounded-full shadow-md transition-all">
+                    Connect
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-full flex items-center justify-center bg-brand-cream text-brand-emerald focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-brand-emerald/95 backdrop-blur-lg z-50 flex flex-col justify-between p-8 transform translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-cream flex items-center justify-center overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/d/1Rj3kVqN9Cawjym0IVx5-WQDDttfr_oTc" alt="Kaizen Growth Logo" class="w-8 h-8 object-contain">
+                </div>
+                <span class="font-serif text-xl font-bold tracking-wider text-brand-cream">KAIZEN GROWTH</span>
+            </div>
+            <button id="mobile-menu-close" class="w-12 h-12 rounded-full bg-brand-cream/10 text-brand-cream flex items-center justify-center">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        
+        <nav class="flex flex-col gap-6 text-2xl font-serif text-brand-cream/90 my-auto">
+            <a href="#home" class="mobile-nav-link hover:text-brand-sage transition-colors">Home</a>
+            <a href="#different" class="mobile-nav-link hover:text-brand-sage transition-colors">We Are Different</a>
+            <a href="#process" class="mobile-nav-link hover:text-brand-sage transition-colors">Process</a>
+            <a href="#services" class="mobile-nav-link hover:text-brand-sage transition-colors">Services</a>
+            <a href="#case-studies" class="mobile-nav-link hover:text-brand-sage transition-colors">Case Studies</a>
+            <a href="#packages" class="mobile-nav-link hover:text-brand-sage transition-colors">Packages</a>
+            <a href="#contact" class="mobile-nav-link hover:text-brand-sage transition-colors">Contact</a>
+        </nav>
+
+        <div class="flex items-center justify-center gap-8 text-2xl text-brand-cream/80">
+            <a href="https://www.instagram.com/kaizengrowth.labs/" target="_blank" class="hover:text-brand-sage"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61591157632738" target="_blank" class="hover:text-brand-sage"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/13477986241" target="_blank" class="hover:text-brand-sage"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:kaizengrowthlabs@gmail.com" class="hover:text-brand-sage"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-screen bg-brand-emerald text-brand-cream pt-32 pb-16 flex flex-col justify-between overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-cover bg-center opacity-25 mix-blend-overlay transition-transform duration-1000 transform scale-105" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald via-transparent to-brand-emerald/70 z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-8 w-full h-full my-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            
+            <!-- Left Editorial Text Content -->
+            <div class="lg:col-span-7 flex flex-col justify-center space-y-6 md:space-y-8">
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-brand-sage animate-ping"></span>
+                    <span class="text-xs uppercase tracking-[0.25em] text-brand-sage font-bold">KAIZEN GROWTH • NEW YORK, NY</span>
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-light leading-none tracking-tight text-white">
+                    GROW YOUR REACH.<br>
+                    <span class="italic text-brand-sage">INCREASE REVENUE.</span><br>
+                    BUILD COMMUNITY.
+                </h1>
+
+                <p class="text-brand-cream/80 text-base md:text-lg max-w-xl font-light leading-relaxed">
+                    Helping prestigious brands and high-performing startups scale through analytics-driven strategy, ROI-focused ads, luxury web design, and high-impact custom content.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                    <a href="#contact" class="group bg-brand-cream text-brand-emerald hover:bg-brand-sage hover:text-brand-emerald transition-all duration-300 font-semibold uppercase tracking-wider text-xs px-8 py-4 rounded-full shadow-lg flex items-center justify-center gap-3">
+                        Start Growing 
+                        <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                    <a href="#packages" class="group border border-brand-cream/30 text-brand-cream hover:border-brand-cream hover:bg-brand-cream/5 transition-all duration-300 font-semibold uppercase tracking-wider text-xs px-8 py-4 rounded-full flex items-center justify-center gap-3">
+                        Book Discovery Call
+                        <i class="fa-solid fa-phone-flip text-xs text-brand-sage"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Content Container -->
+            <div class="lg:col-span-5 relative flex flex-col items-center justify-center">
+                <div class="absolute -top-10 right-4 md:right-10 glass-dark p-4 rounded-2xl flex items-center gap-4 shadow-2xl animate-float z-20">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-emerald object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Client 1">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-emerald object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Client 2">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-emerald object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Client 3">
+                    </div>
+                    <div>
+                        <span class="block text-sm font-bold text-white">500+ Satisfied</span>
+                        <span class="block text-[10px] uppercase tracking-widest text-brand-sage">Global Brands Scaled</span>
+                    </div>
+                </div>
+
+                <!-- Live Premium Dashboard Mockup -->
+                <div class="w-full max-w-md glass-dark p-6 rounded-3xl shadow-2xl border border-white/10 relative z-10 overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-sage/10 to-transparent opacity-50"></div>
+                    
+                    <div class="flex justify-between items-center mb-6 relative z-10">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-brand-sage">Interactive Dashboard</span>
+                            <h3 class="text-lg font-serif font-bold text-white">Live Performance</h3>
+                        </div>
+                        <span class="bg-brand-emerald text-brand-sage text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-brand-sage/30">Active</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6 relative z-10">
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/5 hover:border-brand-sage/20 transition-all">
+                            <span class="text-xs text-brand-cream/60 block mb-1">Total ROI</span>
+                            <span class="text-2xl font-bold text-white tracking-tight" id="hero-roi">412%</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/5 hover:border-brand-sage/20 transition-all">
+                            <span class="text-xs text-brand-cream/60 block mb-1">Ad Impressions</span>
+                            <span class="text-2xl font-bold text-white tracking-tight">15M+</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/5 hover:border-brand-sage/20 transition-all">
+                            <span class="text-xs text-brand-cream/60 block mb-1">Campaigns Managed</span>
+                            <span class="text-2xl font-bold text-white tracking-tight">300+</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/5 hover:border-brand-sage/20 transition-all">
+                            <span class="text-xs text-brand-cream/60 block mb-1">Retention Rate</span>
+                            <span class="text-2xl font-bold text-white tracking-tight text-brand-sage">97%</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5 relative z-10">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold text-brand-cream/90">Click metric to simulate:</span>
+                        </div>
+                        <div class="flex gap-2 text-xs">
+                            <button onclick="simulateMetric('roi', '412%', '482%', 'Total ROI')" class="metric-btn flex-1 py-1.5 px-2 bg-brand-emerald text-brand-sage rounded-lg font-medium border border-brand-sage/30 hover:bg-white/10 transition-all">ROI</button>
+                            <button onclick="simulateMetric('impressions', '15M+', '18.4M+', 'Impressions')" class="metric-btn flex-1 py-1.5 px-2 bg-white/5 text-brand-cream/70 rounded-lg font-medium border border-white/10 hover:bg-white/10 transition-all">Impressions</button>
+                            <button onclick="simulateMetric('retention', '97%', '99.1%', 'Retention')" class="metric-btn flex-1 py-1.5 px-2 bg-white/5 text-brand-cream/70 rounded-lg font-medium border border-white/10 hover:bg-white/10 transition-all">Retention</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location tag -->
+                <div class="w-full max-w-md mt-6 glass-dark p-4 rounded-2xl border border-white/5 relative z-10 flex items-center justify-between">
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest text-brand-sage block">Agency Location</span>
+                        <span class="text-xs font-medium text-white">New York, United States</span>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-brand-sage/20 flex items-center justify-center text-brand-sage">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Pagination Indicators -->
+        <div class="max-w-7xl mx-auto px-4 md:px-8 w-full relative z-10 mt-8 flex justify-between items-center text-xs text-brand-cream/60">
+            <div class="flex items-center gap-2">
+                <span class="text-white font-semibold">01</span>
+                <span class="w-12 h-[1px] bg-brand-sage/50 inline-block"></span>
+                <span>03</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>SCROLL DOWN FOR MORE</span>
+                <i class="fa-solid fa-arrow-down-long animate-bounce text-brand-sage"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WE ARE DIFFERENT SECTION -->
+    <section id="different" class="py-24 md:py-32 bg-brand-offwhite relative">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16 md:mb-24 reveal-up">
+                <div class="lg:col-span-8">
+                    <span class="text-xs uppercase tracking-[0.2em] text-brand-sage font-bold block mb-3">ABOUT THE AGENCY</span>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif text-brand-emerald leading-tight">
+                        WE GROW BRANDS <span class="italic text-brand-sage font-light">DIFFERENTLY.</span>
+                    </h2>
+                </div>
+                <div class="lg:col-span-4 lg:text-right">
+                    <a href="#contact" class="inline-flex items-center gap-3 bg-brand-emerald text-brand-cream hover:bg-brand-sage hover:text-brand-emerald transition-all duration-300 uppercase tracking-widest text-xs font-semibold px-8 py-4 rounded-full shadow-lg">
+                        Get Partnered <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Side: Editorial creative team workspace visual -->
+                <div class="lg:col-span-5 reveal-up">
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-2xl group">
+                        <div class="absolute inset-0 bg-brand-emerald/10 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-500"></div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Creative Strategy Session" class="w-full h-[500px] object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700">
+                        
+                        <div class="absolute bottom-6 left-6 right-6 glass-panel p-6 rounded-2xl flex items-center justify-between border border-white/20">
+                            <div>
+                                <span class="text-[10px] tracking-widest uppercase text-brand-emerald font-semibold block">Team Session</span>
+                                <h4 class="text-base font-bold text-brand-emerald">New York Marketing Lab</h4>
+                            </div>
+                            <span class="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center text-brand-emerald text-sm">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Four Premium Cards -->
+                <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="p-8 bg-white rounded-3xl border border-brand-emerald/5 hover:border-brand-sage/40 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl reveal-up">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-cream flex items-center justify-center text-brand-emerald text-xl mb-6">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-serif font-bold text-brand-emerald mb-3">Performance Marketing</h3>
+                        <p class="text-sm text-brand-forest/80 leading-relaxed font-light">
+                            Google Ads and Meta campaigns engineered strictly for conversions, utilizing modern AI optimization.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-8 bg-white rounded-3xl border border-brand-emerald/5 hover:border-brand-sage/40 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl reveal-up">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-cream flex items-center justify-center text-brand-emerald text-xl mb-6">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-serif font-bold text-brand-emerald mb-3">Local SEO Blueprint</h3>
+                        <p class="text-sm text-brand-forest/80 leading-relaxed font-light">
+                            Maximum visibility with thorough Google Business Profile & local maps ranking dominance.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-8 bg-white rounded-3xl border border-brand-emerald/5 hover:border-brand-sage/40 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl reveal-up">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-cream flex items-center justify-center text-brand-emerald text-xl mb-6">
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-serif font-bold text-brand-emerald mb-3">Reputation Management</h3>
+                        <p class="text-sm text-brand-forest/80 leading-relaxed font-light">
+                            Integrated feedback systems designed to automatically build client trust and positive ratings.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="p-8 bg-white rounded-3xl border border-brand-emerald/5 hover:border-brand-sage/40 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl reveal-up">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-cream flex items-center justify-center text-brand-emerald text-xl mb-6">
+                            <i class="fa-solid fa-bezier-curve"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-serif font-bold text-brand-emerald mb-3">Creative & Content</h3>
+                        <p class="text-sm text-brand-forest/80 leading-relaxed font-light">
+                            Stunning branded graphics, high-converting websites, and organic visual assets that captivate.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="py-24 md:py-32 bg-brand-darkBg text-brand-cream relative overflow-hidden">
+        
+        <!-- Glowing decoration elements -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-sage/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-emerald/30 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            
+            <div class="text-center max-w-2xl mx-auto mb-20 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] text-brand-sage font-bold block mb-3">THE METHODOLOGY</span>
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif text-white leading-tight">
+                    SIMPLE STEPS TO GROW YOUR BUSINESS
+                </h2>
+                <p class="text-brand-cream/60 text-sm mt-4">
+                    Our methodical approach aligns creative executions with hard core analytics data to yield scalable results.
+                </p>
+            </div>
+
+            <!-- Custom Horizontal / Alternating Timeline -->
+            <div class="relative py-12">
+                <div class="absolute top-1/2 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-brand-sage/50 to-transparent hidden lg:block transform -translate-y-1/2"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8 relative z-10">
+                    
+                    <!-- Step 01 -->
+                    <div class="relative flex flex-col items-center lg:pt-24 group reveal-up">
+                        <div class="hidden lg:flex absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-brand-emerald border-2 border-brand-sage items-center justify-center transition-all duration-300 group-hover:scale-125 z-20 shadow-lg shadow-brand-sage/40">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-sage"></span>
+                        </div>
+                        <div class="glass-dark p-8 rounded-3xl border border-white/10 hover:border-brand-sage/40 transition-all text-center w-full">
+                            <span class="text-5xl font-serif font-light text-brand-sage/30 block mb-4 group-hover:text-brand-sage/100 transition-colors">01</span>
+                            <h3 class="text-2xl font-serif text-white font-bold mb-3">Discovery Consultation</h3>
+                            <p class="text-xs text-brand-cream/70 leading-relaxed font-light">
+                                Deep analysis of your brand positioning, historical marketing data, and competitive landscape.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="relative flex flex-col items-center lg:pb-24 lg:flex-col-reverse group reveal-up">
+                        <div class="hidden lg:flex absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-6 h-6 rounded-full bg-brand-emerald border-2 border-brand-sage items-center justify-center transition-all duration-300 group-hover:scale-125 z-20 shadow-lg shadow-brand-sage/40">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-sage"></span>
+                        </div>
+                        <div class="glass-dark p-8 rounded-3xl border border-white/10 hover:border-brand-sage/40 transition-all text-center w-full">
+                            <span class="text-5xl font-serif font-light text-brand-sage/30 block mb-4 group-hover:text-brand-sage/100 transition-colors">02</span>
+                            <h3 class="text-2xl font-serif text-white font-bold mb-3">Strategy & Planning</h3>
+                            <p class="text-xs text-brand-cream/70 leading-relaxed font-light">
+                                Crafting a customized cross-channel blueprint detailing ad spend, audiences, and platform selection.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="relative flex flex-col items-center lg:pt-24 group reveal-up">
+                        <div class="hidden lg:flex absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-brand-emerald border-2 border-brand-sage items-center justify-center transition-all duration-300 group-hover:scale-125 z-20 shadow-lg shadow-brand-sage/40">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-sage"></span>
+                        </div>
+                        <div class="glass-dark p-8 rounded-3xl border border-white/10 hover:border-brand-sage/40 transition-all text-center w-full">
+                            <span class="text-5xl font-serif font-light text-brand-sage/30 block mb-4 group-hover:text-brand-sage/100 transition-colors">03</span>
+                            <h3 class="text-2xl font-serif text-white font-bold mb-3">Campaign Launch</h3>
+                            <p class="text-xs text-brand-cream/70 leading-relaxed font-light">
+                                Deploying high-conversion creative assets, target custom pixel integrations, and launch optimization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="relative flex flex-col items-center lg:pb-24 lg:flex-col-reverse group reveal-up">
+                        <div class="hidden lg:flex absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-6 h-6 rounded-full bg-brand-emerald border-2 border-brand-sage items-center justify-center transition-all duration-300 group-hover:scale-125 z-20 shadow-lg shadow-brand-sage/40">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-sage"></span>
+                        </div>
+                        <div class="glass-dark p-8 rounded-3xl border border-white/10 hover:border-brand-sage/40 transition-all text-center w-full">
+                            <span class="text-5xl font-serif font-light text-brand-sage/30 block mb-4 group-hover:text-brand-sage/100 transition-colors">04</span>
+                            <h3 class="text-2xl font-serif text-white font-bold mb-3">Optimization & Scaling</h3>
+                            <p class="text-xs text-brand-cream/70 leading-relaxed font-light">
+                                Weekly updates and micro-targeting tweaks to boost metrics and expand daily advertising reach.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES SHOWCASE -->
+    <section id="services" class="py-24 md:py-32 bg-brand-cream text-brand-emerald relative">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 reveal-up">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.2em] text-brand-sage font-bold block mb-3">WHAT WE DO BEST</span>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif text-brand-emerald leading-tight">
+                        EXCLUSIVE CAPABILITIES
+                    </h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-sm font-light text-brand-forest/70 max-w-sm block">Premium bespoke executions designed to take control of your market and maximize lead output.</span>
+                </div>
+            </div>
+
+            <!-- Card Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Service Card 1 -->
+                <div class="relative h-[480px] rounded-[2rem] overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 reveal-up">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald via-brand-emerald/40 to-black/20 group-hover:via-brand-emerald/50 transition-all duration-500"></div>
+                    
+                    <div class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/25 backdrop-blur-md text-white flex items-center justify-center border border-white/20 transform group-hover:rotate-45 group-hover:bg-brand-sage group-hover:text-brand-emerald transition-all duration-500">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </div>
+
+                    <div class="absolute top-6 left-6 flex flex-wrap gap-2">
+                        <span class="text-[9px] font-bold uppercase tracking-wider bg-white/10 backdrop-blur-md px-2.5 py-1 rounded-full text-white">Paid Search</span>
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-2">GOOGLE ADS</h3>
+                        <p class="text-xs text-white/80 font-light leading-relaxed max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-500 ease-in-out">
+                            Acquire high-intent customers actively searching for your service. Setup, targeting, and management.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="relative h-[480px] rounded-[2rem] overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 reveal-up">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald via-brand-emerald/40 to-black/20 group-hover:via-brand-emerald/50 transition-all duration-500"></div>
+                    
+                    <div class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/25 backdrop-blur-md text-white flex items-center justify-center border border-white/20 transform group-hover:rotate-45 group-hover:bg-brand-sage group-hover:text-brand-emerald transition-all duration-500">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </div>
+
+                    <div class="absolute top-6 left-6 flex flex-wrap gap-2">
+                        <span class="text-[9px] font-bold uppercase tracking-wider bg-white/10 backdrop-blur-md px-2.5 py-1 rounded-full text-white">Paid Social</span>
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-2">META ADS</h3>
+                        <p class="text-xs text-white/80 font-light leading-relaxed max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-500 ease-in-out">
+                            Scroll-stopping digital visuals coupled with precise demographic and behavioral micro-targeting.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="relative h-[480px] rounded-[2rem] overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 reveal-up">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald via-brand-emerald/40 to-black/20 group-hover:via-brand-emerald/50 transition-all duration-500"></div>
+                    
+                    <div class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/25 backdrop-blur-md text-white flex items-center justify-center border border-white/20 transform group-hover:rotate-45 group-hover:bg-brand-sage group-hover:text-brand-emerald transition-all duration-500">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </div>
+
+                    <div class="absolute top-6 left-6 flex flex-wrap gap-2">
+                        <span class="text-[9px] font-bold uppercase tracking-wider bg-white/10 backdrop-blur-md px-2.5 py-1 rounded-full text-white">SEO / Maps</span>
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-2">GOOGLE BUSINESS MAPS</h3>
+                        <p class="text-xs text-white/80 font-light leading-relaxed max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-500 ease-in-out">
+                            Achieve absolute domination in local search packs and Google Maps directories.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="relative h-[480px] rounded-[2rem] overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 reveal-up">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald via-brand-emerald/40 to-black/20 group-hover:via-brand-emerald/50 transition-all duration-500"></div>
+                    
+                    <div class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/25 backdrop-blur-md text-white flex items-center justify-center border border-white/20 transform group-hover:rotate-45 group-hover:bg-brand-sage group-hover:text-brand-emerald transition-all duration-500">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </div>
+
+                    <div class="absolute top-6 left-6 flex flex-wrap gap-2">
+                        <span class="text-[9px] font-bold uppercase tracking-wider bg-white/10 backdrop-blur-md px-2.5 py-1 rounded-full text-white">Full Stack CRM</span>
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-2">EMAIL AUTOMATION</h3>
+                        <p class="text-xs text-white/80 font-light leading-relaxed max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-500 ease-in-out">
+                            Smart customer-journey sequences designed to reclaim abandoned sales and increase retention.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Custom Interactive Button -->
+            <div class="mt-12 text-center reveal-up">
+                <button onclick="toggleMoreServices()" id="toggle-services-btn" class="inline-flex items-center gap-2 border border-brand-emerald/20 hover:border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white font-semibold uppercase tracking-widest text-xs px-8 py-3 rounded-full transition-all">
+                    Show More Capabilities <i class="fa-solid fa-circle-plus"></i>
+                </button>
+            </div>
+
+            <!-- Dynamic Additional Services -->
+            <div id="additional-services" class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 hidden transition-all duration-500">
+                <div class="bg-white p-8 rounded-3xl border border-brand-emerald/10 shadow-sm hover:shadow-lg transition-all">
+                    <span class="text-xs uppercase tracking-widest text-brand-sage font-bold block mb-2">05 / UIUX Development</span>
+                    <h4 class="text-xl font-serif font-bold mb-3">WEBSITE DESIGN</h4>
+                    <p class="text-sm font-light text-brand-forest/80 leading-relaxed">Highly bespoke, fast-loading portfolios and web systems using modern design concepts.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-brand-emerald/10 shadow-sm hover:shadow-lg transition-all">
+                    <span class="text-xs uppercase tracking-widest text-brand-sage font-bold block mb-2">06 / Creative Brand Identity</span>
+                    <h4 class="text-xl font-serif font-bold mb-3">CREATIVE DESIGN</h4>
+                    <p class="text-sm font-light text-brand-forest/80 leading-relaxed">Full-fledged brand identity designs, marketing kits, and pitchdecks that attract VC interest.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-brand-emerald/10 shadow-sm hover:shadow-lg transition-all">
+                    <span class="text-xs uppercase tracking-widest text-brand-sage font-bold block mb-2">07 / Creative Influence</span>
+                    <h4 class="text-xl font-serif font-bold mb-3">SOCIAL CONTENT</h4>
+                    <p class="text-sm font-light text-brand-forest/80 leading-relaxed">Short-form videos (Reels/TikToks) written, filmed, and optimized for viral audience expansion.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="py-24 bg-brand-cream/60 border-t border-brand-emerald/5 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 md:px-8 text-center relative">
+            <span class="text-xs uppercase tracking-[0.3em] text-brand-sage font-bold block mb-8">TESTIMONIALS</span>
+            
+            <div class="relative min-h-[220px]">
+                
+                <!-- Testimonial 1 -->
+                <div id="testimonial-1" class="testimonial-slide opacity-100 transition-opacity duration-500 space-y-6">
+                    <p class="text-2xl sm:text-3xl md:text-4xl font-serif italic text-brand-emerald leading-relaxed max-w-4xl mx-auto font-light">
+                        "Kaizen Growth transformed our digital marketing approach and doubled our business leads within the first 60 days of launching Meta Ads."
+                    </p>
+                    <div class="flex items-center justify-center gap-3">
+                        <div class="text-yellow-600 text-sm flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-brand-emerald">Serena Jenkins</h4>
+                        <span class="text-xs text-brand-sage font-medium">Founder, Aura Skincare NYC</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div id="testimonial-2" class="testimonial-slide opacity-0 hidden transition-opacity duration-500 space-y-6">
+                    <p class="text-2xl sm:text-3xl md:text-4xl font-serif italic text-brand-emerald leading-relaxed max-w-4xl mx-auto font-light">
+                        "Their Local SEO optimization brought our Manhattan steakhouse to the absolute number one spot for prime culinary searches on Google."
+                    </p>
+                    <div class="flex items-center justify-center gap-3">
+                        <div class="text-yellow-600 text-sm flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-brand-emerald">Marcus Sterling</h4>
+                        <span class="text-xs text-brand-sage font-medium">Managing Director, Prime Steakhouse</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div id="testimonial-3" class="testimonial-slide opacity-0 hidden transition-opacity duration-500 space-y-6">
+                    <p class="text-2xl sm:text-3xl md:text-4xl font-serif italic text-brand-emerald leading-relaxed max-w-4xl mx-auto font-light">
+                        "Unbelievable customer support. Their lead follow-up systems automated all client communications without any hassle."
+                    </p>
+                    <div class="flex items-center justify-center gap-3">
+                        <div class="text-yellow-600 text-sm flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-brand-emerald">Dianne Vance</h4>
+                        <span class="text-xs text-brand-sage font-medium">Head of Growth, Apex SaaS</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex items-center justify-center gap-6 mt-10">
+                <button onclick="prevTestimonial()" class="w-10 h-10 rounded-full border border-brand-emerald/10 hover:border-brand-emerald hover:bg-white text-brand-emerald flex items-center justify-center transition-all">
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                </button>
+                <span class="text-xs text-brand-emerald/40 tracking-widest" id="testimonial-counter">1 / 3</span>
+                <button onclick="nextTestimonial()" class="w-10 h-10 rounded-full border border-brand-emerald/10 hover:border-brand-emerald hover:bg-white text-brand-emerald flex items-center justify-center transition-all">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CASE STUDIES SECTION -->
+    <section id="case-studies" class="py-24 md:py-32 bg-brand-offwhite overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 reveal-up">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.2em] text-brand-sage font-bold block mb-3">PORTFOLIO</span>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif text-brand-emerald leading-tight">
+                        LATEST SUCCESS STORIES
+                    </h2>
+                </div>
+                <div class="flex items-center gap-3 mt-4 md:mt-0">
+                    <button onclick="scrollCaseStudies('left')" class="w-12 h-12 rounded-full border border-brand-emerald/15 hover:border-brand-emerald hover:bg-white text-brand-emerald flex items-center justify-center transition-all" aria-label="Scroll Left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button onclick="scrollCaseStudies('right')" class="w-12 h-12 rounded-full border border-brand-emerald/15 hover:border-brand-emerald hover:bg-white text-brand-emerald flex items-center justify-center transition-all" aria-label="Scroll Right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Horizontal Carousel container -->
+            <div id="case-studies-container" class="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-none scroll-smooth">
+                
+                <!-- Project Card 1 -->
+                <div class="min-w-[85vw] md:min-w-[60vw] lg:min-w-[45vw] snap-start group relative bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-brand-emerald/5">
+                    <div class="relative h-[340px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Restaurant Growth Campaign" class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-6 left-6 bg-brand-emerald text-brand-sage text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full border border-brand-sage/20">SEO & Ads</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-serif text-brand-emerald font-bold">Restaurant Growth Campaign</h3>
+                                <p class="text-xs text-brand-forest/60 uppercase tracking-wider mt-1">Hospitality Group • New York</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-2xl font-bold text-brand-emerald block">+340%</span>
+                                <span class="text-[9px] uppercase text-brand-sage font-bold block">Conversions</span>
+                            </div>
+                        </div>
+                        <p class="text-sm font-light text-brand-forest/80 leading-relaxed mb-6">
+                            Constructed deep-funnel Meta Ads combined with Google Maps optimizations resulting in thousands of reservations month-over-month.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="min-w-[85vw] md:min-w-[60vw] lg:min-w-[45vw] snap-start group relative bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-brand-emerald/5">
+                    <div class="relative h-[340px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Startup Launch Strategy" class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-6 left-6 bg-brand-emerald text-brand-sage text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full border border-brand-sage/20">Branding & Funnel</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-serif text-brand-emerald font-bold">Startup Launch Strategy</h3>
+                                <p class="text-xs text-brand-forest/60 uppercase tracking-wider mt-1">SaaS Tech Startup • Austin</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-2xl font-bold text-brand-emerald block">1.2M+</span>
+                                <span class="text-[9px] uppercase text-brand-sage font-bold block">Impressions</span>
+                            </div>
+                        </div>
+                        <p class="text-sm font-light text-brand-forest/80 leading-relaxed mb-6">
+                            Developed full brand visual system and multi-channel marketing campaigns that successfully activated seed capital conversion.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="min-w-[85vw] md:min-w-[60vw] lg:min-w-[45vw] snap-start group relative bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-brand-emerald/5">
+                    <div class="relative h-[340px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Local Business SEO Success" class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-6 left-6 bg-brand-emerald text-brand-sage text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full border border-brand-sage/20">SEO Domination</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-serif text-brand-emerald font-bold">Local Business SEO Success</h3>
+                                <p class="text-xs text-brand-forest/60 uppercase tracking-wider mt-1">Luxury Real Estate • Miami</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-2xl font-bold text-brand-emerald block">#1 Spot</span>
+                                <span class="text-[9px] uppercase text-brand-sage font-bold block">Google Maps</span>
+                            </div>
+                        </div>
+                        <p class="text-sm font-light text-brand-forest/80 leading-relaxed mb-6">
+                            Optimized Google Business Profiles and generated thousands of automated client review requests resulting in complete localized domination.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="min-w-[85vw] md:min-w-[60vw] lg:min-w-[45vw] snap-start group relative bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-brand-emerald/5">
+                    <div class="relative h-[340px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80" alt="Ecommerce Brand Scaling" class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-6 left-6 bg-brand-emerald text-brand-sage text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full border border-brand-sage/20">E-Commerce & Scale</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-serif text-brand-emerald font-bold">Ecommerce Brand Scaling</h3>
+                                <p class="text-xs text-brand-forest/60 uppercase tracking-wider mt-1">Boutique Fashion • Los Angeles</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-2xl font-bold text-brand-emerald block">5.2x</span>
+                                <span class="text-[9px] uppercase text-brand-sage font-bold block">Ad ROAS</span>
+                            </div>
+                        </div>
+                        <p class="text-sm font-light text-brand-forest/80 leading-relaxed mb-6">
+                            A completely revamped creative strategy paired with automated email flows driving record-breaking customer lifetime-value.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 flex justify-between items-center text-xs text-brand-forest/50">
+                <span>← SWIPE OR DRAG SUCCESS STORIES →</span>
+                <span>Active Portfolio Cases</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PACKAGES SECTION -->
+    <section id="packages" class="py-24 md:py-32 bg-brand-cream text-brand-emerald relative">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 md:mb-24 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] text-brand-sage font-bold block mb-3">INVESTMENT TIERS</span>
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif text-brand-emerald leading-tight">
+                    PREMIUM PRICING PACKAGES
+                </h2>
+                <p class="text-sm font-light text-brand-forest/70 mt-4">
+                    Clear, transparent packages constructed specifically to yield direct revenue scaling and digital trust.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-20">
+                
+                <!-- Starter Tier -->
+                <div class="bg-white rounded-[2.5rem] p-8 border border-brand-emerald/10 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative reveal-up">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-brand-sage font-bold block mb-2">Tier 01</span>
+                        <h3 class="text-3xl font-serif font-bold mb-4">STARTER</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$450</span>
+                            <span class="text-brand-forest/60 text-xs font-light"> / mo</span>
+                        </div>
+                        <p class="text-xs text-brand-forest/70 leading-relaxed font-light mb-8">
+                            Essential digital visibility management and continuous feedback automation to jumpstart brand trust.
+                        </p>
+                        <hr class="border-brand-emerald/10 mb-8">
+                        <ul class="space-y-4 text-sm font-light text-brand-forest">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Google Business management
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Custom review requests
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> 2 Monthly Newsletters
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> 8 Branded social posts
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-6">
+                        <a href="#contact" class="block text-center bg-brand-cream text-brand-emerald hover:bg-brand-emerald hover:text-white transition-all font-semibold uppercase tracking-wider text-xs px-6 py-4 rounded-full">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Growth Tier (Highlighted) -->
+                <div class="bg-brand-emerald text-brand-cream rounded-[2.5rem] p-8 shadow-2xl flex flex-col justify-between hover:scale-105 transition-all duration-300 relative overflow-hidden reveal-up">
+                    <div class="absolute top-0 right-0 bg-brand-sage text-brand-emerald text-[9px] font-bold uppercase tracking-widest px-6 py-2 rounded-bl-2xl">
+                        Recommended
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-brand-sage font-bold block mb-2">Tier 02</span>
+                        <h3 class="text-3xl font-serif font-bold mb-4 text-white">GROWTH</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-white">$750</span>
+                            <span class="text-brand-cream/60 text-xs font-light"> / mo</span>
+                        </div>
+                        <p class="text-xs text-brand-cream/70 leading-relaxed font-light mb-8">
+                            Our primary flagship tier. Complete automation and active paid ad management engineered for scalable outreach.
+                        </p>
+                        <hr class="border-white/10 mb-8">
+                        <ul class="space-y-4 text-sm font-light text-brand-cream/95">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Everything in Starter +
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Google Ads Management
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Meta Ads Management
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Audience pixel deployment
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Monthly ROI tracking reports
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-6">
+                        <a href="#contact" class="block text-center bg-brand-sage text-brand-emerald hover:bg-brand-cream transition-all font-semibold uppercase tracking-wider text-xs px-6 py-4 rounded-full">
+                            Grow Faster
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Full Plate Tier -->
+                <div class="bg-white rounded-[2.5rem] p-8 border border-brand-emerald/10 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative reveal-up">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-brand-sage font-bold block mb-2">Tier 03</span>
+                        <h3 class="text-3xl font-serif font-bold mb-4">FULL PLATE</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$970</span>
+                            <span class="text-brand-forest/60 text-xs font-light"> / mo</span>
+                        </div>
+                        <p class="text-xs text-brand-forest/70 leading-relaxed font-light mb-8">
+                            Complete digital takeover. Advanced strategy development, massive content creation and priority technical turnaround.
+                        </p>
+                        <hr class="border-brand-emerald/10 mb-8">
+                        <ul class="space-y-4 text-sm font-light text-brand-forest">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Everything in Growth +
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Weekly short-form video creation
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Continuous campaign optimization
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Priority premium support channel
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-sage text-xs"></i> Direct strategy consulting calls
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-6">
+                        <a href="#contact" class="block text-center bg-brand-cream text-brand-emerald hover:bg-brand-emerald hover:text-white transition-all font-semibold uppercase tracking-wider text-xs px-6 py-4 rounded-full">
+                            Scale Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ONE-TIME SERVICES -->
+            <div class="bg-white rounded-[2.5rem] p-8 md:p-12 border border-brand-emerald/10 shadow-sm reveal-up">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-brand-emerald">One-Time Project Engagements</h3>
+                        <p class="text-xs text-brand-forest/60 font-light mt-1">Specific performance boosters to power specialized launches.</p>
+                    </div>
+                    <span class="text-xs bg-brand-cream text-brand-emerald px-4 py-2 rounded-full uppercase font-bold tracking-widest border border-brand-sage/20">Custom Add-ons Available</span>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="p-6 bg-brand-offwhite rounded-2xl border border-brand-emerald/5 hover:border-brand-sage transition-all">
+                        <h4 class="text-base font-serif font-bold text-brand-emerald mb-2">GBP & Maps Optimization</h4>
+                        <p class="text-xs font-light text-brand-forest/80 leading-relaxed mb-4">Complete ranking and visibility setup.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-brand-emerald">$200</span>
+                            <span class="text-[9px] uppercase tracking-widest text-brand-sage font-bold">One-Time</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-brand-offwhite rounded-2xl border border-brand-emerald/5 hover:border-brand-sage transition-all">
+                        <h4 class="text-base font-serif font-bold text-brand-emerald mb-2">Ads Campaign Setup</h4>
+                        <p class="text-xs font-light text-brand-forest/80 leading-relaxed mb-4">Meta/Google conversion account setup.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-brand-emerald">$400</span>
+                            <span class="text-[9px] uppercase tracking-widest text-brand-sage font-bold">One-Time</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-brand-offwhite rounded-2xl border border-brand-emerald/5 hover:border-brand-sage transition-all">
+                        <h4 class="text-base font-serif font-bold text-brand-emerald mb-2">Email Automation Setup</h4>
+                        <p class="text-xs font-light text-brand-forest/80 leading-relaxed mb-4">Complete CRM email sequence design.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-brand-emerald">$350</span>
+                            <span class="text-[9px] uppercase tracking-widest text-brand-sage font-bold">One-Time</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-brand-offwhite rounded-2xl border border-brand-emerald/5 hover:border-brand-sage transition-all">
+                        <h4 class="text-base font-serif font-bold text-brand-emerald mb-2">One Page Premium Website</h4>
+                        <p class="text-xs font-light text-brand-forest/80 leading-relaxed mb-4">Bespoke copy, visual assets, & code.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-brand-forest/60 text-[10px] font-medium">From</span>
+                            <span class="text-lg font-bold text-brand-emerald">$700</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA SECTION -->
+    <section id="contact" class="py-24 md:py-32 bg-brand-emerald text-brand-cream relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-emerald via-transparent to-brand-emerald/80 z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Details block -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.3em] text-brand-sage font-bold block mb-3">GET IN TOUCH</span>
+                    <h2 class="text-5xl sm:text-6xl font-serif text-white leading-none">
+                        READY TO SCALE YOUR BUSINESS?
+                    </h2>
+                    <p class="text-brand-cream/80 text-base md:text-lg max-w-lg font-light leading-relaxed">
+                        Let's turn consumer attention into measurable revenue. Complete the consultation inquiry form or contact our New York headquarters directly.
+                    </p>
+                    
+                    <div class="pt-6 space-y-4 text-sm font-light">
+                        <div class="flex items-center gap-4">
+                            <a href="tel:+13477986241" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-sage text-base hover:bg-white/20 transition-all">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a href="tel:+13477986241" class="hover:text-brand-sage transition-colors">+1 (347) 798-6241</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <a href="mailto:kaizengrowthlabs@gmail.com" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-sage text-base hover:bg-white/20 transition-all">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="mailto:kaizengrowthlabs@gmail.com" class="hover:text-brand-sage transition-colors">kaizengrowthlabs@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-sage text-base">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span>New York, United States</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form block (Formspree Integrated) -->
+                <div class="lg:col-span-6">
+                    <div class="glass-dark p-8 md:p-10 rounded-3xl border border-white/10 shadow-2xl">
+                        <h3 class="text-2xl font-serif text-white font-bold mb-6">Book a Free Consultation</h3>
+                        
+                        <!-- Mini dynamic notification toast container -->
+                        <div id="form-alert" class="hidden p-4 rounded-xl text-xs mb-6 transition-all"></div>
+                        
+                        <form id="discovery-form" action="https://formspree.io/f/xeewyyab" method="POST" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-[10px] uppercase tracking-widest text-brand-sage font-bold mb-2">Your Name</label>
+                                    <input type="text" name="name" required class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-sage transition-colors" placeholder="Alexander Hamilton">
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] uppercase tracking-widest text-brand-sage font-bold mb-2">Company / Brand</label>
+                                    <input type="text" name="company" class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-sage transition-colors" placeholder="Hamilton & Co.">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-widest text-brand-sage font-bold mb-2">Email Address</label>
+                                <input type="email" name="email" required class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-sage transition-colors" placeholder="alex@hamilton.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-widest text-brand-sage font-bold mb-2">Select Primary Objective</label>
+                                <select name="objective" class="w-full bg-brand-emerald border border-white/15 rounded-xl px-4 py-3 text-white/80 text-sm focus:outline-none focus:border-brand-sage transition-colors">
+                                    <option value="Performance Google & Meta Ads">Performance Google & Meta Ads</option>
+                                    <option value="Local Map Pack SEO">Local Map Pack SEO</option>
+                                    <option value="Reputation Management Integration">Reputation Management Integration</option>
+                                    <option value="Creative Branding & Web Dev">Creative Branding & Web Dev</option>
+                                    <option value="Enterprise Multi-Channel Growth">Enterprise Multi-Channel Growth</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-widest text-brand-sage font-bold mb-2">Additional details / website URL</label>
+                                <textarea name="message" rows="3" class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-sage transition-colors" placeholder="Tell us about your conversion hurdles..."></textarea>
+                            </div>
+
+                            <button type="submit" id="form-submit-btn" class="w-full bg-brand-sage hover:bg-white text-brand-emerald font-semibold uppercase tracking-widest text-xs py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                                <span id="btn-text">Send Discovery Request</span> <i class="fa-solid fa-paper-plane text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-darkBg text-brand-cream pt-20 pb-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+                
+                <!-- Left side -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-brand-sage flex items-center justify-center overflow-hidden shadow-sm">
+                            <img src="https://lh3.googleusercontent.com/d/1Rj3kVqN9Cawjym0IVx5-WQDDttfr_oTc" alt="Kaizen Growth Logo" class="w-10 h-10 object-contain">
+                        </div>
+                        <span class="font-serif text-2xl font-bold tracking-wider text-white">KAIZEN GROWTH</span>
+                    </div>
+                    
+                    <p class="text-sm font-light text-brand-cream/75 max-w-sm leading-relaxed">
+                        Helping brands and startups grow their reach, revenue, and community through conversion-focused modern optimization models.
+                    </p>
+
+                    <!-- Large clear social media directory icons -->
+                    <div class="flex items-center gap-5 text-xl">
+                        <a href="https://www.instagram.com/kaizengrowth.labs/" target="_blank" class="hover:text-brand-sage transition-all hover:scale-110" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61591157632738" target="_blank" class="hover:text-brand-sage transition-all hover:scale-110" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/13477986241" target="_blank" class="hover:text-brand-sage transition-all hover:scale-110" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:kaizengrowthlabs@gmail.com" class="hover:text-brand-sage transition-all hover:scale-110" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right side navigation directories -->
+                <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
+                    
+                    <div>
+                        <h4 class="text-xs uppercase tracking-widest text-brand-sage font-bold mb-6">Directory</h4>
+                        <ul class="space-y-3 text-sm font-light text-brand-cream/70">
+                            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                            <li><a href="#different" class="hover:text-white transition-colors">Why Kaizen</a></li>
+                            <li><a href="#process" class="hover:text-white transition-colors">Our Process</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Capabilities</a></li>
+                            <li><a href="#case-studies" class="hover:text-white transition-colors">Success Stories</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs uppercase tracking-widest text-brand-sage font-bold mb-6">Services Offered</h4>
+                        <ul class="space-y-3 text-sm font-light text-brand-cream/70">
+                            <li><a href="#services" class="hover:text-white transition-colors">Google Advertising</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Meta Campaigns</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Local Map SEO</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Email CRM Journeys</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Bespoke Web Development</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-2 md:col-span-1">
+                        <h4 class="text-xs uppercase tracking-widest text-brand-sage font-bold mb-6">HQ Newsletter</h4>
+                        <p class="text-xs font-light text-brand-cream/60 leading-relaxed mb-4">Weekly digital marketing hacks for high-growth enterprise brands.</p>
+                        
+                        <!-- Newsletter dynamic form -->
+                        <form onsubmit="handleNewsletterSubmit(event)" class="flex flex-col gap-2">
+                            <input type="email" required id="newsletter-email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-xs focus:outline-none focus:border-brand-sage transition-all" placeholder="your@email.com">
+                            <button type="submit" class="w-full bg-brand-sage text-brand-emerald text-[10px] font-bold tracking-widest uppercase py-3 rounded-xl transition-all hover:bg-white">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="border-white/5 my-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-brand-cream/40 gap-4">
+                <span>Copyright © 2026 Kaizen Growth. All rights reserved. New York, United States.</span>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-all">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-all">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        // Interactive custom mock statistics metrics handler
+        function simulateMetric(key, current, projected, label) {
+            const displayEl = document.getElementById('hero-roi');
+            if (!displayEl) return;
+
+            // Highlight chosen metric button state
+            const buttons = document.querySelectorAll('.metric-btn');
+            buttons.forEach(btn => {
+                if(btn.innerText.toLowerCase().includes(key)) {
+                    btn.classList.add('bg-brand-emerald', 'text-brand-sage', 'border-brand-sage/30');
+                    btn.classList.remove('bg-white/5', 'text-brand-cream/70', 'border-white/10');
+                } else {
+                    btn.classList.remove('bg-brand-emerald', 'text-brand-sage', 'border-brand-sage/30');
+                    btn.classList.add('bg-white/5', 'text-brand-cream/70', 'border-white/10');
+                }
+            });
+
+            // Perform premium count simulation animation
+            let value = 0;
+            displayEl.innerText = projected;
+            displayEl.classList.add('text-brand-sage', 'scale-105');
+            
+            setTimeout(() => {
+                displayEl.classList.remove('scale-105');
+            }, 300);
+        }
+
+        // Horizontal Portfolio / Case Studies custom scrolling function
+        function scrollCaseStudies(direction) {
+            const container = document.getElementById('case-studies-container');
+            if (!container) return;
+            const scrollAmount = window.innerWidth * 0.5;
+            if (direction === 'left') {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        // Toggle additional capability cards
+        function toggleMoreServices() {
+            const extraServices = document.getElementById('additional-services');
+            const btn = document.getElementById('toggle-services-btn');
+            if (extraServices.classList.contains('hidden')) {
+                extraServices.classList.remove('hidden');
+                btn.innerHTML = 'Show Less Capabilities <i class="fa-solid fa-circle-minus"></i>';
+            } else {
+                extraServices.classList.add('hidden');
+                btn.innerHTML = 'Show More Capabilities <i class="fa-solid fa-circle-plus"></i>';
+            }
+        }
+
+        // Testimonial slide logic
+        let currentTestimonial = 1;
+        const totalTestimonials = 3;
+
+        function updateTestimonials() {
+            for (let i = 1; i <= totalTestimonials; i++) {
+                const slide = document.getElementById(`testimonial-${i}`);
+                if (slide) {
+                    if (i === currentTestimonial) {
+                        slide.classList.remove('hidden', 'opacity-0');
+                        slide.classList.add('opacity-100');
+                    } else {
+                        slide.classList.add('hidden', 'opacity-0');
+                        slide.classList.remove('opacity-100');
+                    }
+                }
+            }
+            document.getElementById('testimonial-counter').innerText = `${currentTestimonial} / ${totalTestimonials}`;
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = currentTestimonial === 1 ? totalTestimonials : currentTestimonial - 1;
+            updateTestimonials();
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = currentTestimonial === totalTestimonials ? 1 : currentTestimonial + 1;
+            updateTestimonials();
+        }
+
+        // Interactive Formspree Form Submission Logic
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const alertBox = document.getElementById('form-alert');
+            const submitBtn = document.getElementById('form-submit-btn');
+            const btnText = document.getElementById('btn-text');
+
+            // Set loading state
+            btnText.innerText = "Sending...";
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                alertBox.classList.remove('hidden');
+                if (response.ok) {
+                    alertBox.className = "p-4 rounded-xl text-xs mb-6 transition-all bg-brand-sage/20 border border-brand-sage text-brand-sage";
+                    alertBox.innerHTML = '<strong>Success!</strong> Your growth discovery call request has been queued. Our NYC strategy team will connect shortly.';
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwnProperty.call(data, 'errors')) {
+                            alertBox.className = "p-4 rounded-xl text-xs mb-6 transition-all bg-red-900/20 border border-red-500 text-red-200";
+                            alertBox.innerHTML = `<strong>Error:</strong> ${data.errors.map(error => error.message).join(", ")}`;
+                        } else {
+                            alertBox.className = "p-4 rounded-xl text-xs mb-6 transition-all bg-red-900/20 border border-red-500 text-red-200";
+                            alertBox.innerHTML = '<strong>Oops!</strong> There was a problem submitting your request. Please try again.';
+                        }
+                    });
+                }
+            })
+            .catch(error => {
+                alertBox.classList.remove('hidden');
+                alertBox.className = "p-4 rounded-xl text-xs mb-6 transition-all bg-red-900/20 border border-red-500 text-red-200";
+                alertBox.innerHTML = '<strong>Oops!</strong> We could not establish a connection. Check your internet link and try again.';
+            })
+            .finally(() => {
+                btnText.innerText = "Send Discovery Request";
+                submitBtn.disabled = false;
+                alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        }
+
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const input = document.getElementById('newsletter-email');
+            alert(`Thank you for subscribing! Premium insights will be delivered weekly to ${input.value}`);
+            event.target.reset();
+        }
+
+        // Mobile drawer control logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+
+        // Sticky Navbar styling changes during scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('sticky-header');
+            if (window.scrollY > 50) {
+                header.classList.remove('top-8');
+                header.classList.add('top-0', 'px-0', 'md:px-0');
+                header.querySelector('.max-w-7xl').classList.remove('rounded-full');
+                header.querySelector('.max-w-7xl').classList.add('rounded-none', 'border-x-0', 'border-t-0');
+            } else {
+                header.classList.add('top-8');
+                header.classList.remove('top-0', 'px-0', 'md:px-0');
+                header.querySelector('.max-w-7xl').classList.add('rounded-full');
+                header.querySelector('.max-w-7xl').classList.remove('rounded-none', 'border-x-0', 'border-t-0');
+            }
+        });
+
+        // Initialize scroll reveal triggers
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-up').forEach(element => {
+            revealObserver.observe(element);
+        });
+
+        window.onload = function() {
+            updateTestimonials();
+        }
+    </script>
+</body>
+</html>
